@@ -5,10 +5,10 @@
       <h1>毕过题库管理</h1>
     </header>
     <Tabs
+      class="tab_wrap"
       v-model:active="activeName"
       background="#fff"
       color="#FF7700"
-      swipeable
       @change="onTabChange"
     >
       <Tab title="套餐" name="multi">
@@ -26,8 +26,8 @@ import { ref } from "vue";
 import { useRoute } from "vue-router";
 import { onBeforeRouteUpdate } from "vue-router";
 import { Tab, Tabs } from "vant";
-import MultiPass from "./components/MultiPass.vue";
-import SinglePass from "./components/SinglePass.vue";
+import MultiPass from "./components/MultiPass";
+import SinglePass from "./components/SinglePass";
 
 export default {
   name: "ExamEndPass",
@@ -50,6 +50,7 @@ export default {
       }
     });
 
+    // 标签切换 对应标签组件重新渲染  触发重新获取列表
     const onTabChange = (params) => {
       console.log("params", params);
       if (params === "multi") multiKey.value = new Date().getTime();
@@ -66,13 +67,14 @@ export default {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(180deg, #fff 0%, #f2f2f2 100%);
-  padding-top: 55px;
+  background: #f2f2f2;
+  padding-top: 100px;
   box-sizing: border-box;
 }
 header {
   background: #f8f8f8;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0;
@@ -95,6 +97,19 @@ header {
     font-size: 16px;
     font-weight: bold;
     color: #000000;
+  }
+}
+.tab_wrap {
+  ::v-deep .van-tabs__wrap {
+    position: fixed;
+    height: fit-content;
+    top: 55px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .van-tabs__nav {
+      padding-top: 15px;
+    }
   }
 }
 </style>

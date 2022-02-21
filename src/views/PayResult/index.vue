@@ -96,6 +96,7 @@ export default {
 header {
   background: #f8f8f8;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0;
