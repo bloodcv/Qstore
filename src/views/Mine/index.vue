@@ -210,6 +210,7 @@ main {
 }
 footer {
   margin-top: 109px;
+  margin-bottom: 20px;
   span {
     font-size: 14px;
     font-weight: bold;
