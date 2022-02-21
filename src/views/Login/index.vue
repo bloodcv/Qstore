@@ -135,10 +135,8 @@ main {
   }
 }
 footer {
-  position: absolute;
+  margin-top: 40px;
   width: 100%;
-  height: fit-content;
-  bottom: 40px;
   font-size: 14px;
   font-weight: 800;
   line-height: 20px;

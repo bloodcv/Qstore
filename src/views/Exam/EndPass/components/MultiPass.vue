@@ -5,12 +5,10 @@
 <script>
 export default {
   name: "MultiPass",
-  data() {
+  setup() {
+    console.log("展示multi");
     return {};
   },
-  created() {},
-  mounted() {},
-  methods: {},
 };
 </script>
 

@@ -5,12 +5,10 @@
 <script>
 export default {
   name: "SinglePass",
-  data() {
+  setup() {
+    console.log("展示single");
     return {};
   },
-  created() {},
-  mounted() {},
-  methods: {},
 };
 </script>
 

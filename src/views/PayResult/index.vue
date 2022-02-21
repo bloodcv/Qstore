@@ -1,7 +1,7 @@
 <template>
   <div class="pay_result_wrap">
     <header>
-      <img class="icon" src="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+      <!-- <img class="icon" src="https://b.yzcdn.cn/vant/icon-demo-1126.png" /> -->
       <h1>购买详情</h1>
     </header>
     <div class="pay_info part_wrap">
@@ -94,7 +94,7 @@ export default {
   }
 }
 header {
-  background-color: #fff;
+  background: #f8f8f8;
   position: fixed;
   top: 0;
   left: 0;
@@ -121,6 +121,17 @@ header {
   }
 }
 .pay_info {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 184px;
+    height: 184px;
+    background: url("../../assets/10.png") no-repeat center/cover;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -92px;
+  }
   > .title {
     font-size: 24px;
     font-weight: bold;
@@ -229,13 +240,4 @@ header {
     padding: 5px 40px;
   }
 }
-/* 
-
-    <div class="active_code part_wrap">
-      <h1 class="title">激活码</h1>
-      <span class="code">{{ code }}</span>
-      <Button type="default">复制激活码</Button>
-    </div>
-
- */
 </style>

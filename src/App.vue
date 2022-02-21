@@ -38,9 +38,8 @@ export default {
     ];
     const router = useRouter();
     const OnDebugItem = (action) => {
-      console.log("action", action);
-      const { path } = action;
-      router.push({ path });
+      const { path, params } = action;
+      router.push({ path, query: params || {} });
     };
 
     return {
