@@ -72,7 +72,7 @@ export default {
 <style scoped lang="scss">
 .main_wrap {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   ::v-deep .van-popover__wrapper {
     z-index: 100;
     position: fixed;

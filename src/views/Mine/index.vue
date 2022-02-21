@@ -18,24 +18,15 @@
         <h3 class="title">题库管理</h3>
         <ul class="item_wrap">
           <li class="item">
-            <Icon
-              class="icon"
-              name="https://b.yzcdn.cn/vant/icon-demo-1126.png"
-            />
+            <img class="icon" src="../../assets/4.png" />
             <span class="item_title">金考典题库管理</span>
           </li>
           <li class="item">
-            <Icon
-              class="icon"
-              name="https://b.yzcdn.cn/vant/icon-demo-1126.png"
-            />
+            <img class="icon" src="../../assets/5.png" />
             <span class="item_title">魔考题库管理</span>
           </li>
           <li class="item">
-            <Icon
-              class="icon"
-              name="https://b.yzcdn.cn/vant/icon-demo-1126.png"
-            />
+            <img class="icon" src="../../assets/6.png" />
             <span class="item_title">毕过题库管理</span>
           </li>
         </ul>
@@ -44,17 +35,11 @@
         <h3 class="title">充值管理</h3>
         <ul class="item_wrap">
           <li class="item">
-            <Icon
-              class="icon"
-              name="https://b.yzcdn.cn/vant/icon-demo-1126.png"
-            />
+            <img class="icon" src="../../assets/7.png" />
             <span class="item_title">充值记录</span>
           </li>
           <li class="item">
-            <Icon
-              class="icon"
-              name="https://b.yzcdn.cn/vant/icon-demo-1126.png"
-            />
+            <img class="icon" src="../../assets/8.png" />
             <span class="item_title">购买记录</span>
           </li>
         </ul>
@@ -68,13 +53,12 @@
 
 <script>
 import { ref } from "vue";
-import { Button, Icon } from "vant";
+import { Button } from "vant";
 
 export default {
   name: "Mine",
   components: {
     Button,
-    Icon,
   },
   setup() {
     const username = ref("学院_47587588 V");
@@ -190,14 +174,22 @@ main {
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.16);
         border-radius: 6px;
         margin-bottom: 13px;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 4.55px;
+          height: 9.1px;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url("../../assets/9.png") no-repeat center/cover;
+        }
         .icon {
           width: 18px;
           height: 16.75px;
           margin-right: 9px;
-          ::v-deep .van-icon__image {
-            width: 100%;
-            height: 100%;
-          }
+          display: block;
         }
         .item_title {
           font-size: 16px;
