@@ -176,26 +176,4 @@ export default {
     }
   }
 }
-/* 
-    <div class="item_wrap">
-      <div class="item" v-for="item in tableData" :key="item.id">
-        <h3 class="title">{{ item.title }}</h3>
-        <div class="item_content">
-          <span>课程分类：{{ item.category }}</span>
-          <span>类别：{{ item.type }}</span>
-        </div>
-        <div class="item_price">
-          <span class="origin">原价:￥{{ item.origin }}</span>
-          <span class="discount">折扣率:{{ item.rate }}</span>
-          <span class="price"
-            >折后价:<span class="num">￥{{ item.current }}</span></span
-          >
-        </div>
-        <Button type="default" class="buy_btn" @click="onBuy(item)"
-          >购买</Button
-        >
-      </div>
-    </div>
- */
 </style>
-
