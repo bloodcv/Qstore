@@ -589,42 +589,4 @@ header {
   background-color: rgba(0, 0, 0, 0.51);
   z-index: 5;
 }
-/* 
-
-    <div class="sec_part">
-      <div class="sec_wrap">
-        <div class="sec_content">
-          <!-- ㄑく -->
-          <div class="item_wrap">
-            <span v-for="(item, idx) in curSecList" :key="idx">
-              {{ item }}
-            </span>
-          </div>
-          <div class="btn_wrap">
-            <Button type="default">重置</Button>
-            <Button type="default">确定</Button>
-          </div>
-        </div>
-      </div>
-      <div class="sec_res">
-        <span>已选中筛选:</span>
-        <div>
-          <Tag
-            v-for="(item, idx) in tagMap"
-            :key="idx"
-            color="#fff"
-            text-color="#666"
-            plain
-            closeable
-            size="medium"
-            type="primary"
-            @close="closeTag(item)"
-          >
-            {{ item }}
-          </Tag>
-        </div>
-      </div>
-    </div>
-
- */
 </style>
