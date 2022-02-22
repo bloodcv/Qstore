@@ -1,7 +1,7 @@
 export const endPassDataMock = [
   {
     id: 1,
-    title: "（1年期a）初级会计实务+经济法基础",
+    title: "（1年期a）初级会计实务+经济法基础23456786543234567876543456789",
     category: "2022年中级会计职称考试",
     type: "单科",
     origin: "18",

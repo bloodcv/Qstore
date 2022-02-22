@@ -123,8 +123,7 @@ export default {
         height: 9px;
         background-color: #709fff;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 5px;
         border-radius: 3px;
       }
     }

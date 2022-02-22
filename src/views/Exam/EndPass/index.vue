@@ -110,6 +110,9 @@ header {
     .van-tabs__nav {
       padding-top: 15px;
     }
+    .van-tabs__line {
+      bottom: 5px;
+    }
   }
 }
 </style>
